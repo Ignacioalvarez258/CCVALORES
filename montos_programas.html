@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Montos Programas</title>
+    
+</head>
+<body>
+   
+    <header>
+        <h1>Montos Programas</h1>
+    </header>
+
+    <nav>
+        <a href="inicio.html" class="super-link">Inicio</a>
+        <a href="programa.html" class="super-link">Generacion Programas Atencion</a>
+        <a href="montos_programas.html" class="super-link">Montos Programas</a>
+        <a href="practicas_programas.html" class="super-link">Asignar Practicas a Programas Atencion</a>
+        <a href="excepciones_os_plan_cod.html" class="super-link">Excepciones os-plan-Cod</a>
+        <a href="excepciones.html" class="super-link">Excepciones OS</a>
+        <a href="usuarios.html" class="admin-link">Gestion De usuarios</a>
+    </nav>
+    <div>
+        <button id="logout">Loguot</button>
+    </div>
+    <section>
+        <h2>Gestion de los montos minimos </h2>
+    </section>
+
+    <section>
+    <button id="btnAddMontoMinimo">Agregar Monto</button>
+    <button id="btnUpdMontoMinimo">Modificar Monto</button>
+    <button id="btnDltMontoMinimo">Eliminar Monto</button>
+    </section>
+
+    <div id="montoMinimoModalAdd" class="modal">
+        <div class="modal-content">
+          <span id="closemodalAddMontoMinimo" class="close">&times;</span>
+          <select id="programDropdownMontoMinimo">     
+          </select>               
+           <form id="addMontoMinimoForm">
+                      
+                        <input type="text" id="programaMontoMinimoAdd" name="id_programa"  required><br><br>                          
+                        <label for="importe">Importe:</label>
+                        <input type="text" id="importeMinimoAdd" name="importe_minimo" required><br><br>
+                        <label for="importe">Importe APROSS:</label>
+                        <input type="text" id="importeMinimoAddApross" name="importe_minimo_apross" required ><br><br>
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="fechaImporteMinimoAdd" name="fecha" required><br><br> 
+                        <label for="user"> Usuario:</label>
+                        <input type="text" id="usuarioCreacionMontoMinimo" name="usuario_creacion" required><br><br> 
+                        <label for="created">creado:</label>
+                        <input type="date" id="creadoMontoMinimoAdd" name="creado"><br><br>
+                        <button type="submit" >Agregar</button>                                                  
+            </form>                
+        </div>
+      </div>
+      <div id="montoMinimoModalUpd" class="modal">
+        <div class="modal-content">
+          <span id="closemodalUpdMontoMinimo" class="close">&times;</span>
+          <select id="programDropdownMontoMinimoUpd">     
+          </select>
+          <br></br>     
+          <select id="mesDropdownMontoMinimoUpd">     
+          </select>
+          <br></br>     
+          <select id="añoDropdownMontoMinimoUpd">     
+          </select>
+          <br></br> 
+          <button id="loadUpdMontoMinimo">buscar</button>                                      
+           <form id="UpdMontoMinimoForm">
+                        <input type="text" id="idMontoMinimoUpd" name="id" hidden required> 
+                        <input type="text" id="programaMontoMinimoUpd" name="id_programa" hidden required>                         
+                        <label for="importe">Importe:</label>
+                        <input type="text" id="importeMinimoUpd" name="importe_minimo" required><br><br>
+                        <label for="importe">Importe APROSS:</label>
+                        <input type="text" id="importeMinimoUpdApross" name="importe_minimo_apross" required ><br><br>
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="fechaImporteMinimoUpd" name="fecha" required><br><br> 
+                        <label for="user"> Usuario:</label>
+                        <input type="text" id="usuarioCreacionMontoMinimoUpd" name="usuario_creacion" required><br><br> 
+                        <label for="created">creado:</label>
+                        <input type="date" id="creadoMontoMinimoUpd" name="creado"><br><br>
+                        <button type="submit" >Guardar</button>                                                  
+            </form>
+
+        </div>
+      </div>
+      <div id="montoMinimoModalDlt" class="modal">
+        <div class="modal-content">
+          <span id="closemodalDltMontoMinimo" class="close">&times;</span>
+          <select id="programDropdownMontoMinimoDlt">     
+          </select>
+          <br></br>     
+          <select id="mesDropdownMontoMinimoDlt">     
+          </select>
+          <br></br>     
+          <select id="añoDropdownMontoMinimoDlt">     
+          </select>
+          <br></br> 
+          <button id="loadDltMontoMinimo">buscar</button>                                      
+           <form id="DltMontoMinimoForm">
+                        <input type="text" id="idMontoMinimoDlt" name="id" hidden required> 
+                        <input type="text" id="programaMontoMinimoDlt" name="id_programa" hidden required>                         
+                        <label for="importe">Importe:</label>
+                        <input type="text" id="importeMinimoDlt" name="importe_minimo" required><br><br>
+                        <label for="importe">Importe APROSS:</label>
+                        <input type="text" id="importeMinimoDltApross" name="importe_minimo_apross" required ><br><br>
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="fechaImporteMinimoDlt" name="fecha" required><br><br> 
+                        <label for="user"> Usuario:</label>
+                        <input type="text" id="usuarioCreacionMontoMinimoDlt" name="usuario_creacion" required><br><br> 
+                        <label for="created">creado:</label>
+                        <input type="date" id="creadoMontoMinimoDlt" name="creado"><br><br>
+                        <button type="submit" >Borrar</button>                                                  
+            </form>
+
+        </div>
+      </div>
+      <div id="tableMontoMinimos">
+        <table id="tablaMontosMinimos">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>PROGRAMA</th>
+                    <th>IMPORTE MINIMO</th>
+                    <th>IMPORTE MINIMO APROSS</th>
+                    <th>FECHA</th>
+                    <th>USUARIO</th>
+                    <th>CREADO</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table> 
+      
+    </div>
+     
+              
+
+    <footer>
+        <p>Derechos de autor &copy; 2024 Ignacio Alvarez.</p>
+    </footer>
+   
+    <script src="scripMontoMinimo.js"></script>
+    
+</html>

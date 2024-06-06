@@ -1,0 +1,244 @@
+body {
+    font-family:Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color:  #f0f0f0;
+    color:#0e0d0d;
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    background-color:  #f0f0f0;
+    color: #0e0d0d;
+    padding: 5px;
+    text-align: center;
+}
+nav a {
+    color: #0e0d0d;
+    text-decoration: none;
+    margin: 0 10px;
+}
+section {
+    padding: 10px;
+}
+footer {
+    background-color: #f0f0f0;
+    color: #0a0606;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.select-container{
+    display:inline-block;
+    margin-right: 10px; 
+}
+
+#tablaDatos td,th{
+    padding: 12px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #tablaDatos {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tablaDatos th, #tablaDatos td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#tablaDatos th {
+    background-color: #f2f2f2;
+}
+
+#tablaDatos tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tablaDatos tr:hover {
+    background-color: #dddddd;
+}
+#tablapracticas {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tablapracticas th, #tablapracticas td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#tablapracticas th {
+    background-color: #f2f2f2;
+}
+
+#tablapracticas tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tablapracticas tr:hover {
+    background-color: #dddddd;
+}
+
+#tablaprogramas {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tablaprogramas th, #tablaprogramas td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#tablaprogramas th {
+    background-color: #f2f2f2;
+}
+
+#tablaprogramas tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tablaprogramas tr:hover {
+    background-color: #dddddd;
+}
+
+
+#deleteModalBtn,
+#btnAddPractica,
+#btnNewProgram {
+    display: inline-block;
+    margin-right: 10px; /* Ajusta este valor según sea necesario */
+}
+.super-link{
+    display: none;
+}
+.admin-link{
+    display: none;
+}
+
+#tablaintereses {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tablaintereses th, #tablaintereses td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#tablaintereses th {
+    background-color: #f2f2f2;
+}
+
+#tablaintereses tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tablaintereses tr:hover {
+    background-color: #dddddd;
+}
+
+
+#tablaExcepcionesOsplanCod {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tablaExcepcionesOsplanCod th, #tablaExcepcionesOsplanCod td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#tablaExcepcionesOsplanCod th {
+    background-color: #f2f2f2;
+}
+
+#tablaExcepcionesOsplanCod tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tablaExcepcionesOsplanCod tr:hover {
+    background-color: #dddddd;
+}
+.btn-eliminar{
+
+    color: aliceblue;
+    background-color: rgb(248, 49, 49);
+    border-radius: 10%;
+}
+
+.modal-content_upd {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  #logout {
+    position: absolute;
+    top: 15px; /* Ajusta el valor para tu necesidad */
+    right: 15px; /* Ajusta el valor para tu necesidad */
+    background-color: rgba(250, 162, 180, 0.329);
+}
+
+table td,th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    
+}
+table{
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}

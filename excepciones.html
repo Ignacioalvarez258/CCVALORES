@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Montos Programas</title>
+    
+</head>
+<body>
+  <div>
+    <button id="logout">Loguot</button>
+</div>
+     <header>
+        <h1>Montos Programas</h1>
+     </header>
+
+     <nav>
+      <a href="inicio.html" class="super-link">Inicio</a>
+      <a href="programa.html" class="super-link">Generacion Programas Atencion</a>
+      <a href="montos_programas.html" class="super-link">Montos Programas</a>
+      <a href="practicas_programas.html" class="super-link">Asignar Practicas a Programas Atencion</a>
+      <a href="excepciones_os_plan_cod.html" class="super-link">Excepciones os-plan-Cod</a>
+      <a href="excepciones.html" class="super-link">Excepciones OS</a>
+      <a href="usuarios.html" class="admin-link">Gestion De usuarios</a>
+     </nav>
+
+     <section>
+        <h2>Gestion de las excepciones </h2>
+     </section>
+     <section>
+        <button id="btnAddExcepcion">Agregar Excepcion</button>
+        <button id="btnUpdateExcepcion">Modificar Excepcion</button>
+        <button id="btnDeleteExcepcion">Eliminar Excepcion</button>
+     </section>
+    
+    
+     <div id="excepcionModalAdd" class="modal">
+        <div class="modal-content">
+          <span id="closemodalAddExcepcion" class="close">&times;</span>
+                        
+           <form id="addExcepcionForm">
+                        <label for="codOs">Codigo OS:</label>
+                        <input type="text" id="programaMontoMinimoAdd" name="codigo_os" required><br><br>                          
+                        <label for="excepcion">Excepcion:</label>
+                        <input type="text" id="importeMinimoAdd" name="excepcion" required><br><br>
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="fechaImporteMinimoAdd" name="fecha" required><br><br> 
+                        <label for="user"> Usuario Creacion:</label>
+                        <input type="text" id="usuarioCreacionMontoMinimo" name="usuario_creacion" required><br><br> 
+                        <button type="submit" >Guardar</button>                                                  
+            </form>                
+        </div>
+      </div>
+      
+      <div id="excepcionModalUpdate" class="modal">
+        <div class="modal-content">
+          <span id="closemodalUpdateExcepcion" class="close">&times;</span>
+           <label>Os: </label>
+           <select id="excepcionDropdown" class="dropdown">          
+          </select>     
+          <br><br>       
+           <form id="updateExcepcionForm">
+                        <input type="text" id="idExcepcionUpdate" name="id" hidden >                 
+                        <label for="excepcion">Excepcion:</label>
+                        <input type="text" id="excepcionUpdateForm" name="excepcion" required><br><br>
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="fechaUpdateForm" name="fecha" required><br><br> 
+                        <label for="user"> Usuario Creacion:</label>
+                        <input type="text" id="userUpdateForm" name="usuario_creacion" required><br><br>                                                                      
+            </form>  
+            <button id="saveChangesBtnUpdateExcepcion">Guardar Cambios</button>             
+        </div>
+      </div>
+
+      <div id="excepcionModalDelete" class="modal">
+        <div class="modal-content">
+          <span id="closemodalDeleteExcepcion" class="close">&times;</span>
+           <label>Os: </label>
+           <select id="excepcionDropdownDelete" class="dropdown">          
+          </select>     
+          <br><br>       
+           <form id="deleteExcepcionForm">
+                        <input type="text" id="idExcepcionDelete" name="id" hidden >                 
+                        <label for="excepcion">Excepcion:</label>
+                        <input type="text" id="excepcionDeleteForm" name="excepcion" required><br><br>
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="fechaDeleteForm" name="fecha" required><br><br> 
+                        <label for="user"> Usuario Creacion:</label>
+                        <input type="text" id="userDeleteForm" name="usuario_creacion" required><br><br>                                                                      
+            </form>  
+            <button id="saveChangesBtnDeleteExcepcion">Guardar Cambios</button>             
+        </div>
+      </div>
+
+      <div id="tableExcepcion">
+        <table id="tablaExcepcion">
+            <thead>
+                <tr>  
+                    <th>Id</th>
+                    <th>CODIGO OS</th>
+                    <th>EXCEPCION</th>
+                    <th>FECHA</th>
+                    <th>USUARIO CREACION</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table> 
+      
+     </div>
+     
+              
+
+    <footer>
+        <p>Derechos de autor &copy; 2024 Ignacio Alvarez.</p>
+    </footer>
+   
+    <script src="scriptExcepcion.js"></script>
+</body> 
+</html>

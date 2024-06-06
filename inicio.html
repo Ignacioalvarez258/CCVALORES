@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>NATANET</title>
+    
+</head>
+<body>
+    <div>
+        <button id="logout">Loguot</button>
+    </div>
+    <header>
+        <h1>NATANET</h1>
+    </header>
+
+    <nav>
+        <a href="inicio.html" class="super-link">Inicio</a>
+        <a href="programa.html" class="super-link">Generacion Programas Atencion</a>
+        <a href="montos_programas.html" class="super-link">Montos Programas</a>
+        <a href="practicas_programas.html" class="super-link">Asignar Practicas a Programas Atencion</a>
+        <a href="excepciones_os_plan_cod.html" class="super-link">Excepciones os-plan-Cod</a>
+        <a href="excepciones.html" class="super-link">Excepciones OS</a>
+        <a href="usuarios.html" class="admin-link">Gestion De usuarios</a>
+    </nav>
+
+    <section>
+        <h2>Informacion Sobre programas de atencion</h2>
+    </section>
+    <div>
+        <div class="select-container">
+            <select id="DespPrograma">
+                <option value="">Selecciona un programa de atencion</option>
+            </select>          
+        </div>
+        <div class="select-container">
+            <select id="DespOs">
+                <option value="">Selecciona una ObraSocial</option>
+            </select>          
+        </div>
+        <div class="select-container">
+            <select id="DespPlan">
+                <option value="">Selecciona un Plan</option>
+            </select>          
+        </div>
+        <div class="select-container">
+            <select id="DespMes">
+                <option value="">Selecciona un mes</option>
+            </select>          
+        </div>
+        <div class="select-container">
+            <select id="DespYear">
+                <option value="">Selecciona un Año</option>
+            </select>          
+        </div>
+    </div>    
+    <table id="tablaDatos">
+        <thead>
+            <tr>
+                <th>codigoPractica</th>
+                <th>nombrePractica</th>
+                <th>totalConvenio</th>
+                <th>Tipo Autorizacion</th>              
+                <th>Derivacion</th>
+                <th>Coseguro</th>
+                <th>Valor Particular</th>
+                <th>Excepciones de estudios</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table> 
+    <button id="btnCargarDatos">Cargar Datos</button>
+    <div>  
+      <label>Total</label>       
+     <input type="text" id="total" readonly>
+     <label>coseguro</label>       
+     <input type="text" id="coseguro" readonly>
+     <label>Importe Minimo Programa</label>       
+     <input type="text" id="importeMinimo" readonly>
+     <label>Importe a pagar</label>       
+     <input type="text" id="importeAPagar" readonly>
+     <br>
+     <label>Monto Particular</label>       
+     <input type="text" id="montoParticular" readonly>
+    </div>
+    <div>
+        <label>Excepciones</label>
+        <textarea type="text" id="excepciones" readonly rows="4" cols="50" > 
+
+        </textarea>
+
+    </div>
+    <table id="tablaintereses" class="tabla">
+        <thead>
+            <tr>
+                <th>TARJETAS</th>
+                <th>CUOTAS</th>
+                <th>INTERES</th>
+                <th>IMPORTE TOTAL A PAGAR</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table> 
+    <footer>
+        <p>Derechos de autor &copy; 2024 Ignacio Alvarez.</p>
+    </footer>
+   
+    <script src="script.js"></script>
+    
+</html>

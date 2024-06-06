@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>PROGRAMAS DE ATENCION</title>
+</head>
+<body>
+  <div>
+    <button id="logout">Loguot</button>
+</div>
+    <header>
+        <h1>Programa de Atencion</h1>
+    </header>
+
+    <nav>
+      <a href="inicio.html" class="super-link">Inicio</a>
+      <a href="programa.html" class="super-link">Generacion Programas Atencion</a>
+      <a href="montos_programas.html" class="super-link">Montos Programas</a>
+      <a href="practicas_programas.html" class="super-link">Asignar Practicas a Programas Atencion</a>
+      <a href="excepciones_os_plan_cod.html" class="super-link">Excepciones os-plan-Cod</a>
+      <a href="excepciones.html" class="super-link">Excepciones OS</a>
+      <a href="usuarios.html" class="admin-link">Gestion De usuarios</a>
+    </nav>
+
+    <section>
+        <h2>Informacion Sobre programas de atencion</h2>
+        <button id="btnNewProgram">Nuevo Programa</button>
+        <button id="openModalBtn">Modificar Programa</button>
+        <button id="deleteModalBtn">Borrar Programa</button>
+    </section>
+   
+    <div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span id="closemodalNewPrograma" class="close">&times;</span>
+              <h2>Nuevo Programa</h2>
+              <form id="programForm">
+                <label for="nombre_programa">Nombre Programa:</label>
+                <input type="text" id="nombre_programa" name="nombre_programa" required><br><br>  
+                <label for="activo">Activo:</label>
+                <input type="checkbox" id="activo" name="activo"></textarea><br><br>
+                <label for="creado">Creado:</label>
+                <input type="date" id="creado" name="creado" required><br><br>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required><br><br>                           
+                <button type="submit">Guardar Programa</button>
+              </form>
+            </div>
+          </div>
+    </div>
+
+
+    <div id="myModal1" class="modal">
+      <div class="modal-content">
+        <span id="closemodal" class="close">&times;</span>
+        <h2>Modificar Programa</h2>
+        <select id="programDropdown">          
+        </select>
+        <form id="modifyProgramForm">
+          <label for="nombre_programa">Nombre Programa:</label>
+          <input type="text" id="nombre_programaModal" name="nombre_programa" required><br><br>  
+          <label for="activo">Activo:</label>
+          <input type="checkbox" id="activoModal" name="activo"></textarea><br><br>
+          <label for="creado">Creado:</label>
+          <input type="date" id="creadoModal" name="creado" required><br><br>
+          <label for="usuario">Usuario:</label>
+          <input type="text" id="usuarioModal" name="usuario" required><br><br>                           
+        </form>
+        <button id="saveChangesBtn">Guardar Cambios</button>
+      </div>
+    </div>
+
+   
+    <div id="deleteModal" class="modal">
+      <div class="modal-content">
+        <span id="closemodalDelete" class="close">&times;</span>
+        <h2>Borrar Programa</h2>
+        <select id="programDropdownDelete">    
+        </select>
+        <form id="deleteProgramForm">
+          <label for="nombre_programa">Nombre Programa:</label>
+          <input type="text" id="nombre_programaModalDelete" name="nombre_programa" required><br><br>  
+          <label for="activo">Activo:</label>
+          <input type="checkbox" id="activoModalDelete" name="activo"></textarea><br><br>
+          <label for="creado">Creado:</label>
+          <input type="date" id="creadoModalDelete" name="creado" required><br><br>
+          <label for="usuario">Usuario:</label>
+          <input type="text" id="usuarioModalDelete" name="usuario" required><br><br>                           
+        </form>
+        <button id="deleteBtn">Borrar Programa</button>
+      </div>
+    </div>
+
+    <div id="tableProgram">
+        <table id="tablaprogramas" class="tabla">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>NombrePrograma</th>
+                    <th>Activo</th>
+                    <th>Creado</th>
+                    <th>Usuario</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table> 
+      
+    </div>
+
+    <footer>
+        <p>Derechos de autor &copy; 2024 Ignacio Alvarez.</p>
+    </footer>
+    <script src="scriptProgramas.js"></script>
+</body>
+</html>

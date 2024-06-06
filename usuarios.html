@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Usuarios</title>
+</head>
+<body>
+    <div>
+        <button id="logout">Loguot</button>
+    </div>
+    <header>
+        <h1>NATANET</h1>
+    </header>
+    <nav>
+        <a href="inicio.html" class="super-link">Inicio</a>
+        <a href="programa.html" class="super-link">Generacion Programas Atencion</a>
+        <a href="montos_programas.html" class="super-link">Montos Programas</a>
+        <a href="practicas_programas.html" class="super-link">Asignar Practicas a Programas Atencion</a>
+        <a href="excepciones_os_plan_cod.html" class="super-link">Excepciones os-plan-Cod</a>
+        <a href="excepciones.html" class="super-link">Excepciones OS</a>
+        <a href="usuarios.html" class="admin-link">Gestion De usuarios</a>
+    </nav>
+    <section>
+        <h2>Gestion de usuarios de la aplicacion</h2>
+    </section>
+
+    <button id="btnAddUser">Agregar Usuario</button>
+    
+    <div id="usersModalAdd" class="modal">
+        <div class="modal-content">
+          <span id="closemodalAddUsers" class="close">&times;</span>
+                            
+           <form id="addUserForm">
+                        <label for="nombre">Nombre :</label>
+                        <input type="text" id="nombreUserAdd" name="name" required><br><br>                          
+                        <label for="last_name">Apellido :</label>
+                        <input type="text" id="apellidoUserAdd" name="last_name" required><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="mailUseraAdd" name="email" required><br><br> 
+                        <label for="user_name"> Usuario:</label>
+                        <input type="text" id="userNameUserAdd" name="user_name" required><br><br> 
+                        <label for="password">Password:</label>
+                        <input type="password" id="passwordUserAdd" name="password"><br><br>   
+                        <label for="role">Rol:</label>
+                        <input type="text" id="rolUserAdd" name="role" required><br><br>       
+                        <button type="submit" >Guardar Usuario</button>                                                  
+            </form>                
+        </div>
+      </div>
+      <div id="tableUsers">
+        <table id="tablaUsuarios">
+            <thead>
+                <tr>
+                   
+                    <th>NOMBRE</th>
+                    <th>APELLIDO</th>
+                    <th>EMAIL</th>
+                    <th>NOMBRE USUARIO</th>
+                    <th>ROL</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table> 
+      
+    </div>
+
+
+
+</body>
+<script src="scriptUsuarios.js"></script>
+</html>

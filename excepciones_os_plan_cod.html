@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>NATANET</title>
+    
+</head>
+<body>
+    <div>
+        <button id="logout">Loguot</button>
+    </div>
+    <header>
+        <h1>NATANET</h1>
+    </header>
+
+    <nav>
+        <a href="inicio.html" class="super-link">Inicio</a>
+        <a href="programa.html" class="super-link">Generacion Programas Atencion</a>
+        <a href="montos_programas.html" class="super-link">Montos Programas</a>
+        <a href="practicas_programas.html" class="super-link">Asignar Practicas a Programas Atencion</a>
+        <a href="excepciones_os_plan_cod.html" class="super-link">Excepciones os-plan-Cod</a>
+        <a href="excepciones.html" class="super-link">Excepciones OS</a>
+        <a href="usuarios.html" class="admin-link">Gestion De usuarios</a>
+    </nav>
+
+    <section>
+        <h2>Gestion excepciones por OS, Plan y Codigo de practicas</h2>
+    </section>
+    <section>
+        <button id="btnAddExcepcionOS">Agregar Excepcion</button>
+        <button id="btnUpdateExcepcionOS">Modificar Excepcion</button>
+     </section>
+     <div id="excepcionOsModalAdd" class="modal">
+        <div class="modal-content">
+          <span id="closemodalAddExcepcionOs" class="close">&times;</span>
+         
+            <label for="input1">Codigo os</label>
+            <select id="osExcecpcioOsDespAdd" name="os_cod">
+              
+            </select>
+            <br><br> 
+            <label for="input2">Plan</label>
+            <select id="planExcecpcioOsDespAdd" name="plan_id">
+            </select>
+            <br><br>
+            <label for="input3">Nombre de practica:</label>
+             <select id="nomCodExcecpcioOsDespAdd" name="nombre_Practica">         
+            </select>
+             <br><br>
+             <label for="input3">Nomenclador:</label>
+             <select id="nomencladorExcecpcioOsDespAdd" name="nomencladorId">         
+             </select>
+             <br><br>
+                        
+           <form id="addExcepcionOSForm">
+                        <label for="excepcion">Codigo os:</label>
+                        <input type="text" id="osExcecpcioOsAdd" name="os_cod" required><br><br>
+                        <label for="excepcion">Plan:</label>
+                        <input type="text" id="planExcecpcioOsAdd" name="plan_id" required><br><br>
+                        <label for="excepcion">Codigo de practica:</label>
+                        <input type="text" id="codExcecpcioOsAdd" name="cod_practica" required><br><br>
+                        <label for="excepcion">Nombre de practica:</label>
+                        <input type="text" id="nomCodExcecpcioOsAdd" name="nombre_Practica" required><br><br>
+                        <label for="excepcion">Nomenclador:</label>
+                        <input type="text" id="nomencladorExcecpcioOsAdd" name="nomencladorId" required><br><br>                         
+                        <label for="excepcion">Excepcion:</label>
+                        <input type="text" id="excepcionExcecpcioOsAdd" name="excepcion" required><br><br>
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="fechaExcecpcioOsAdd" name="creado" required><br><br> 
+                        <label for="user"> Usuario Creacion:</label>
+                        <input type="text" id="creadoExcecpcioOsAdd" name="usuario" required><br><br> 
+                        <button type="submit" >Guardar</button>                                                  
+            </form>                
+        </div>
+      </div>
+      <div id="excepcionOsModalUdp" class="modal">
+        <div class="modal-content">
+          <span id="closemodalUdpExcepcionOs" class="close">&times;</span>
+         
+            <label for="input1">Codigo os</label>
+            <select id="osExcecpcioOsDespUdp" name="os_cod">
+              
+            </select>
+            <br><br> 
+            <label for="input2">Plan</label>
+            <select id="planExcecpcioOsDespUdp" name="plan_id">
+            </select>
+            <br><br>
+            <label for="input3">Nombre de practica:</label>
+             <select id="nomCodExcecpcioOsDespUdp" name="nombre_Practica">         
+            </select>
+             <br><br>
+             <label for="input3">Nomenclador:</label>
+             <select id="nomencladorExcecpcioOsDespUdp" name="nomencladorId">         
+             </select>
+             <br><br>
+             <button id="loadUpdExcepcionOs">buscar</button>             
+           <form id="UdpExcepcionOSForm">
+                        <input type="text" id="idExcecpcioOsUdp" name="id" required><br><br>
+                        <label for="excepcion">Codigo os:</label>
+                        <input type="text" id="osExcecpcioOsUdp" name="os_cod" required><br><br>
+                        <label for="excepcion">Plan:</label>
+                        <input type="text" id="planExcecpcioOsUdp" name="plan_id" required><br><br>
+                        <label for="excepcion">Codigo de practica:</label>
+                        <input type="text" id="codExcecpcioOsUdp" name="cod_practica" required><br><br>
+                        <label for="excepcion">Nombre de practica:</label>
+                        <input type="text" id="nomCodExcecpcioOsUdp" name="nombre_Practica" required><br><br>
+                        <label for="excepcion">Nomenclador:</label>
+                        <input type="text" id="nomencladorExcecpcioOsUdp" name="nomencladorId" required><br><br>                         
+                        <label for="excepcion">Excepcion:</label>
+                        <input type="text" id="excepcionExcecpcioOsUdp" name="excepcion" required><br><br>
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="fechaExcecpcioOsUdp" name="creado" required><br><br> 
+                        <label for="user"> Usuario Creacion:</label>
+                        <input type="text" id="creadoExcecpcioOsUdp" name="usuario" required><br><br> 
+                        <button type="submit" >Guardar</button>                                                  
+            </form>                
+        </div>
+      </div>
+   
+    <table id="tablaExcepcionesOsplanCod">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Codigo OS</th>
+                <th>Plan</th>
+                <th>Codigo Practica</th>
+                <th>Practica</th>              
+                <th>Nomenclador</th>
+                <th>Excepcion</th>
+                <th>Creado</th>
+                <th>usuario</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table> 
+  
+    <footer>
+        <p>Derechos de autor &copy; 2024 Ignacio Alvarez.</p>
+    </footer>
+   
+    <script src="scriptExcepciones_os_plan_cod.js"></script>
+    
+</html>

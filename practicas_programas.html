@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>PRACTICAS PROGRAMAS ATENCION</title>
+    
+</head>
+<body>
+    <div>
+        <button id="logout">Loguot</button>
+    </div>
+    <header>
+        <h1>Practicas Programa de Atencion</h1>
+    </header>
+
+    <nav>
+        <a href="inicio.html" class="super-link">Inicio</a>
+        <a href="programa.html" class="super-link">Generacion Programas Atencion</a>
+        <a href="montos_programas.html" class="super-link">Montos Programas</a>
+        <a href="practicas_programas.html" class="super-link">Asignar Practicas a Programas Atencion</a>
+        <a href="excepciones_os_plan_cod.html" class="super-link">Excepciones os-plan-Cod</a>
+        <a href="excepciones.html" class="super-link">Excepciones OS</a>
+        <a href="usuarios.html" class="admin-link">Gestion De usuarios</a>
+    </nav>
+
+    <section>
+        <h2>Informacion Sobre Practicas Programa de Atencion</h2>
+    </section>
+    <section>
+        <button id="btnAddPractica">Agregar Practicas</button>  
+    </section>
+    
+    
+    <div id="practicasModalAdd" class="modal">
+        <div class="modal-content">
+          <span id="closemodalAddPracticas" class="close">&times;</span>
+         
+            
+            <label for="input1">PROGRAMA</label>
+            <select id="ServicioImput" name="input1">
+              
+            </select>
+            <br><br> 
+            <label for="input2">CODIGO DE PRACTICA</label>
+            <select id="CodigoPracticaImputaddPractica" name="input2">
+             >
+            </select>
+            <br><br> 
+            <label for="input3">NOMENCLADOR ID</label>
+            <select id="nomencladorImputAddPractica" name="input3">
+              
+            </select>
+            <br><br>
+           
+           <form id="addpracticaform">
+                        <label for="nombre_programa">Nombre Programa:</label>
+                        <input type="text" id="nombre_programaModalPracticaAdd" name="nombre_programa" required><br><br>                          
+                        <label for="CodigoPractica">Codigo de Practica:</label>
+                        <input type="text" id="CodigoPracticaModalPracticaAdd" name="cod_practica" required><br><br>
+                        <label for="nombrePractica">Nombre de Practica:</label>
+                        <input type="text" id="nombrePracticaModalPracticaAdd" name="nombre_Practica" required><br><br> 
+                        <label for="NomencladorID">Nomenclador Id:</label>
+                        <input type="text" id="NomencladorIdModalPracticaAdd" name="nomencladorId" required><br><br> 
+                        <label for="Opcional">Opcional:</label>
+                        <input type="checkbox" id="opcionalModalPracticaAdd" name="opcional"></textarea><br><br>
+                        <label for="activo">Activo:</label>
+                        <input type="checkbox" id="activoModalPracticaAdd" name="activo"></textarea><br><br>
+                        <label for="creado">Creado:</label>
+                        <input type="date" id="creadoModalPracticaAdd" name="creado" required><br><br>
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuarioModalPracticaAdd" name="usuario" required><br><br>
+                        <button type="submit" >Guardar Programa</button>                           
+            </form>      
+       
+          
+        </div>
+       </div>
+      <div id="practicasModalUpd" class="modal">
+        <div class="modal-content">
+          <span id="closemodalUpdPracticas" class="close">&times;</span>
+         
+            
+            <label for="input1">PROGRAMA</label>
+            <select id="ServicioImputUpd" name="input1">
+              
+            </select>
+            <br><br> 
+            <label for="input2">CODIGO DE PRACTICA</label>
+            <select id="CodigoPracticaImputUdpPractica" name="input2">
+             >
+            </select>
+            <br><br> 
+            <label for="input3">NOMENCLADOR ID</label>
+            <select id="nomencladorImputUdpPractica" name="input3">              
+            </select>
+       
+            <br></br> 
+            <button id="loadUpdpracticas">buscar</button>   
+            <br><br>
+           
+           <form id="udpPracticaform">
+                        <label for="nombre_programa">Nombre Programa:</label>
+                        <input type="text" id="nombre_programaModalPracticaUdp" name="nombre_programa" required><br><br>                          
+                        <label for="CodigoPractica">Codigo de Practica:</label>
+                        <input type="text" id="CodigoPracticaModalPracticaUdp" name="cod_practica" required><br><br>
+                        <label for="nombrePractica">Nombre de Practica:</label>
+                        <input type="text" id="nombrePracticaModalPracticaUdp" name="nombre_Practica" required><br><br> 
+                        <label for="NomencladorID">Nomenclador Id:</label>
+                        <input type="text" id="NomencladorIdModalPracticaUdp" name="nomencladorId" required><br><br> 
+                        <label for="Opcional">Opcional:</label>
+                        <input type="checkbox" id="opcionalModalPracticaUdp" name="opcional"></textarea><br><br>
+                        <label for="activo">Activo:</label>
+                        <input type="checkbox" id="activoModalPracticaUdp" name="activo"></textarea><br><br>
+                        <label for="creado">Creado:</label>
+                        <input type="date" id="creadoModalPracticaAdd" name="creado" required><br><br>
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuarioModalPracticaUdp" name="usuario" required><br><br>
+                        <button type="submit" >Guardar Programa</button>                           
+            </form>      
+       
+          
+        </div>
+      </div> 
+  
+      <div>
+        <table id="tablapracticas">
+          <thead>
+              <tr>
+                  <th>Id</th>
+                  <th>Id Programa</th>
+                  <th>CodigoPractica</th>
+                  <th>NombrePractica</th>
+                  <th>NomencladorID</th>
+                  <th>Opcional</th>
+                  <th>Activo</th>
+                  <th>Creado</th>
+                  <th>Usuario</th>
+              </tr>
+          </thead>
+          <tbody>
+             
+          </tbody>
+      </div>
+    <footer>
+        <p>Derechos de autor &copy; 2024 Ignacio Alvarez.</p>
+    </footer>
+    <script src="scriptPracticas.js"></script>
+</body>
+
+</html>
